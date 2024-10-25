@@ -35,14 +35,14 @@ o	Interface en course (position, mini-carte, numéro du tour, vitesse, objets sp
 | Classe principale | Sous-classes ou éléments associés               | Description |
 |-------------------|-------------------------------------------------|-------------|
 | **GameManager**   | -                                               | Contrôle principal du jeu : initialise la course, gère les états de jeu et la progression. |
-| **Vehicle**       | - PlayerVehicle<br>- AIVehicle                  | Classe de base pour tous les véhicules. Définit les propriétés générales comme la vitesse, les collisions, etc. |
-| **PlayerVehicle** | -                                               | Hérite de `Vehicle`. Ajoute des contrôles spécifiques au joueur, comme l’accélération et le freinage manuels. |
-| **AIVehicle**     | - AIController                                  | Hérite de `Vehicle`. Utilise un contrôleur d’IA pour naviguer sur le circuit et utiliser des objets spéciaux stratégiquement. |
+| **Vehicule**      | - PlayerVehicle<br>- AIVehicle                  | Classe de base pour tous les véhicules. Définit les propriétés générales comme la vitesse, les collisions, etc. |
+| **PlayerVehicule**| -                                               | Hérite de `Vehicule`. Ajoute des contrôles spécifiques au joueur, comme l’accélération et le freinage manuels. |
+| **AIVehicule**    | - AIController                                  | Hérite de `Vehicule`. Utilise un contrôleur d’IA pour naviguer sur le circuit et utiliser des objets spéciaux stratégiquement. |
 | **Item**          | - SpeedBoost<br>- Shield<br>- Missile<br>- OilSlick<br>- EMP | Classe de base pour tous les objets spéciaux du jeu. Chacun d’eux a des effets spécifiques pour modifier la vitesse ou affecter les autres véhicules. |
 | **Track**         | - Obstacle<br>- Boundary                        | Définit le circuit, y compris les obstacles et les limites. Les obstacles sont utilisés pour ralentir les véhicules en cas de collision. |
-| **UIManager**     | -                                               | Gère l’interface utilisateur, affichant la position, la mini-carte, les objets disponibles, etc. |
-| **Leaderboard**   | -                                               | Met à jour et affiche le classement des joueurs en fonction de leur position sur le circuit. |
-| **AIController**  | -                                               | Gère le comportement et les décisions des véhicules contrôlés par l’IA pour éviter les obstacles et utiliser des objets. |
+| **UIManager**     | -                                               | Gère l’interface utilisateur, affichant la position, la mini-carte, les objets disponibles, et d'autres. |
+| **Leaderboard**   | -                                               | affiche le classement des joueurs en fonction de leur position soit du 1er jusqu'a dernier 10e. |
+| **AIController**  | -                                               | Gère le comportement et les décisions des véhicules contrôlés par l’IA pour éviter les obstacles. |
 
 Cloner le dépôt :
 ```bash
