@@ -36,8 +36,8 @@ o	Interface en course (position, mini-carte, numéro du tour, vitesse, objets sp
 |-------------------|-------------------------------------------------|-------------|
 | **GameManager**   | -                                               | Contrôle principal du jeu : initialise la course, gère les états de jeu et la progression. |
 | **Vehicule**      | - PlayerVehicle<br>- AIVehicle                  | Classe de base pour tous les véhicules. Définit les propriétés générales comme la vitesse, les collisions, etc. |
-| **PlayerVehicule**| -                                               | Hérite de `Vehicule`. Ajoute des contrôles spécifiques au joueur, comme l’accélération et le freinage manuels. |
-| **AIVehicule**    | - AIController                                  | Hérite de `Vehicule`. Utilise un contrôleur d’IA pour naviguer sur le circuit et utiliser des objets spéciaux stratégiquement. |
+| **PlayerVehicule**| -                                               | Hérite de la classe `Vehicule`. Ajoute des contrôles spécifiques au joueur, comme l’accélération et le freinage manuels. |
+| **AIVehicule**    | - AIController                                  | Hérite de la classe `Vehicule`. Utilise un contrôleur d’IA pour naviguer sur le circuit et utiliser des objets spéciaux stratégiquement. |
 | **Item**          | - SpeedBoost<br>- Shield<br>- Missile<br>- OilSlick<br>- EMP | Classe de base pour tous les objets spéciaux du jeu. Chacun d’eux a des effets spécifiques pour modifier la vitesse ou affecter les autres véhicules. |
 | **Track**         | - Obstacle<br>- Boundary                        | Définit le circuit, y compris les obstacles et les limites. Les obstacles sont utilisés pour ralentir les véhicules en cas de collision. |
 | **UIManager**     | -                                               | Gère l’interface utilisateur, affichant la position, la mini-carte, les objets disponibles, et d'autres. |
