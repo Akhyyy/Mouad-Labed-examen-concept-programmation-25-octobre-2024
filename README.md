@@ -41,7 +41,7 @@ o	Interface en course (position, mini-carte, numéro du tour, vitesse, objets sp
 | **Item**          | - SpeedBoost<br>- Shield<br>- Missile<br>- OilSlick<br>- EMP | Classe de base pour tous les objets spéciaux du jeu. Chacun d’eux a des effets spécifiques pour modifier la vitesse ou affecter les autres véhicules. |
 | **Track**         | - Obstacle<br>- Boundary                        | Définit le circuit, y compris les obstacles et les limites. Les obstacles sont utilisés pour ralentir les véhicules en cas de collision. |
 | **UIManager**     | -                                               | Gère l’interface utilisateur, affichant la position, la mini-carte, les objets disponibles, et d'autres. |
-| **Leaderboard**   | -                                               | affiche le classement des joueurs en fonction de leur position soit du 1er jusqu'a dernier 10e. |
+| **Leaderboard**   | -                                               | Affiche le classement des joueurs en fonction de leur position soit du 1er jusqu'a dernier 10e. |
 | **AIController**  | -                                               | Gère le comportement et les décisions des véhicules contrôlés par l’IA pour éviter les obstacles. |
 
 Cloner le dépôt :
