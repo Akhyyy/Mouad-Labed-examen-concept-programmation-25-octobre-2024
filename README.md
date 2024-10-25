@@ -28,9 +28,8 @@ o	Sélection de circuit
 o	Tableau des scores
 o	Interface en course (position, mini-carte, numéro du tour, vitesse, objets spéciaux disponibles)
 
-## Hiérarchie des Classes
 
-### Hiérarchie de classe proposée
+## Hiérarchie des Classes
 
 | Classe principale | Sous-classes ou éléments associés               | Description |
 |-------------------|-------------------------------------------------|-------------|
@@ -43,6 +42,21 @@ o	Interface en course (position, mini-carte, numéro du tour, vitesse, objets sp
 | **UIManager**     | -                                               | Gère l’interface utilisateur, affichant la position, la mini-carte, les objets disponibles, et d'autres. |
 | **Leaderboard**   | -                                               | Affiche le classement des joueurs en fonction de leur position soit du 1er jusqu'a dernier 10e. |
 | **AIController**  | -                                               | Gère le comportement et les décisions des véhicules contrôlés par l’IA pour éviter les obstacles. |
+
+
+## Patrons de Conception
+
+Pour structurer efficacement les fonctionnalités du jeu, plusieurs patrons de conception ont été intégrés :
+
+1. **Patron de Création** : *Factory Method*
+   - Utilisé pour créer les objets spéciaux de la classe `Item`. La classe `Item` génère des objets pendant la course, tels que les boucliers ou les boosts de vitesse, permettant d'utiliser ces items au besoins du joueur ou de l'IA.
+   
+2. **Patron Structurel** : *Composite*
+   - Utilisé pour la classe `Track`, composée d’obstacles et de limites. Le patron `Composite` permet d'organiser les éléments du circuit sous forme d’objets indépendants, facilitant ainsi leur gestion et leur modification.
+
+3. **Patron Comportemental** : *Strategy*
+   - Utilisé dans `AIController`, où l’algorithme de déplacement peut être modifié en fonction de la difficulté du jeu ou de la stratégie souhaitée pour l'IA. Ce patron permet de changer facilement les stratégies de navigation, par exemple en passant d’une approche de navigation simple à un algorithme de pathfinding plus complexe.
+  
 
 Cloner le dépôt :
 ```bash
